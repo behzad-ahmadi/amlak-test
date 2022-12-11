@@ -1,0 +1,30 @@
+{
+  "html-css-class-completion.enableEmmetSupport": false,
+  "html-css-class-completion.JavaScriptLanguages": [
+    "javascript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "html-css-class-completion.HTMLLanguages": [
+    "html",
+    "vue",
+    "razor",
+    "blade",
+    "handlebars",
+    "twig",
+    "django-html",
+    "php",
+    "markdown",
+    "erb",
+    "ejs",
+    "svelte",
+    "react",
+    "java"
+  ],
+  "html-css-class-completion.CSSLanguages": ["css", "sass", "scss"],
+  "editor.quickSuggestions": {
+    "comments": false, // <- no 24x7 IntelliSense in comments
+    "strings": true, // but in strings and the other parts of source files
+    "other": true
+  }
+}
