@@ -25,6 +25,9 @@ export default function NextBreadcrumbs({
       const asPathNestedRoutes = generatePathParts(router.asPath);
       const pathnameNestedRoutes = generatePathParts(router.pathname);
 
+      if (asPathNestedRoutes[0] === '#' || pathnameNestedRoutes[0] === '#')
+        return [{ href: '/', text: 'Home' }];
+
       const crumblist = asPathNestedRoutes.map((subpath, idx) => {
         // Pull out and convert "[post_id]" into "post_id"
         const param = pathnameNestedRoutes[idx]

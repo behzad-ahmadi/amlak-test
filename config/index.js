@@ -1,5 +1,10 @@
 export const site = { title: 'Amlak Aseman' };
 
+export const colorsHash = { border: '#dee2e6' };
+
+export const numberWithCommas = x =>
+  x?.toString()?.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
 export const mainMenuItems = [
   {
     id: '1',
@@ -92,3 +97,39 @@ export const mainMenuItems = [
 
   { id: '5', title: 'Contact', path: '/contactUs' },
 ];
+// images, forRent, featured, price, detail, user
+// detail: fileType, title, address, beds, baths, SqFt, createTime, user, images
+// user: fullname,
+
+const users = [
+  { id: '1', fullName: 'Ahmad Yari' },
+  { id: '2', fullName: 'Ali Jamali' },
+  { id: '3', fullName: 'Reza Farhadi' },
+];
+
+const detailes = [
+  {
+    id: '1',
+    fileType: 'Apartment',
+    title: 'Renovated Apartment',
+    address: '1421 San Pedro St, Los Angeles, CA 90015',
+    beds: 2,
+    baths: 2,
+    sqft: 5280,
+    forRent: true,
+    featured: true,
+    price: '13000',
+    creatorId: '1',
+    images: [
+      { id: '1', src: '/images/fp2.jpg', alt: 'Renovated Apartment' },
+      { id: '2', src: '/images/fp3.jpg', alt: 'Renovated Apartment' },
+      { id: '3', src: '/images/fp4.jpg', alt: 'Renovated Apartment' },
+    ],
+  },
+];
+
+export const files = detailes.map(detail => {
+  const fullName = users.find(user => user.id === detail.creatorId).fullName;
+  detail.creatorName = fullName;
+  return { detail: detail };
+});

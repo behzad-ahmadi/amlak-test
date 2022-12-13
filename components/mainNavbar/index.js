@@ -11,6 +11,7 @@ import { useRouter } from 'next/router';
 import * as config from '../../config';
 import { useState } from 'react';
 import { Person, Plus } from 'react-bootstrap-icons';
+
 const MenuItem = ({ id, title, path, subMenu, divider, depth }) => {
   const router = useRouter();
   const [show, setShow] = useState(false);

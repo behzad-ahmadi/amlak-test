@@ -5,7 +5,7 @@ import { faTable, faThList } from '@fortawesome/free-solid-svg-icons';
 
 const InfoHeader = ({ title }) => {
   return (
-    <Row direction="horizontal">
+    <Row className="mb-5">
       <Col>
         <NextBreadcrumbs />
         <h2 className="fs-4 fw-bold" style={{ color: '#484848' }}>
