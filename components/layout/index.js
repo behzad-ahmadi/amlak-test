@@ -5,7 +5,7 @@ import Header from './header';
 const Layout = ({ children }) => {
   return (
     <Container fluid className="bg-light">
-      <Row>
+      <Row style={{ marginBottom: '6rem' }}>
         <Header />
       </Row>
       <Container>

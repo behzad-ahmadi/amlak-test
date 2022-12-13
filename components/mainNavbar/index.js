@@ -80,7 +80,7 @@ const brand = () => {
 
 const MaiNavbar = () => {
   return (
-    <Navbar bg="white" expand="lg" className="p-3 shadow-sm">
+    <Navbar bg="white" expand="lg" fixed="top" className="p-3 shadow-sm">
       <Container fluid>
         <Navbar.Brand>{brand()}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

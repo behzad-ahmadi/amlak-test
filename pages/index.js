@@ -1,7 +1,7 @@
 import { Col, Container, Row, Stack } from 'react-bootstrap';
 import InfoHeader from '../components/layout/infoHeader';
 import SerachOption from '../components/serachOption';
-import CardFiles from '../components/cardFiles';
+import CardFiles from '../components/cardFile';
 import { files as dummyFiles } from '../config';
 import { useEffect, useState } from 'react';
 
