@@ -7,7 +7,7 @@ import * as React from 'react';
 const _defaultGetTextGenerator = (param, query) => null;
 const _defaultGetDefaultTextGenerator = path => path;
 
-// Pulled out the path part breakdown because its
+// Pulled out the path part breakdown
 // going to be used by both `asPath` and `pathname`
 const generatePathParts = pathStr => {
   const pathWithoutQuery = pathStr.split('?')[0];
